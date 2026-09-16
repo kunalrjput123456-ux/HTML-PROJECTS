@@ -10,7 +10,7 @@
     body {
         margin: 0;
         min-height: 100vh;
-        background: linear-gradient(135deg, #141e30, #243b55);
+        background: linear-gradient(135deg, #01b09c, #9a35d9);
         color: white;
     }
 </style>
@@ -64,7 +64,52 @@
                    
                 }
             }
-
         </style>
+
+        <div class="login-box">
+            <h3>Login</h3>
+            <form>
+                <input type="text" placeholder="Username" />
+                <input type="password" placeholder="Password" />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <style>
+            .login-box {
+               
+                width: 300px;
+                padding: 40px;
+                margin: 50px auto;
+                background: #d517a5;
+                color: white;
+                border-radius: 30px;
+                box-shadow: 0 10px 30px rgba(255, 158, 158, 0.4);
+            }
+            .login-box h3 {
+                text-align: center;
+                
+                margin-top: -10px;
+            }
+            .login-box input {
+                width: 95%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: none;
+            }
+            .login-box button {
+                  right: 5%;
+                  transform: translateX(3%);  
+                width:95%;
+                padding: 9px;
+                background-color: #101010;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+      
+       
 </body>
 </html>
