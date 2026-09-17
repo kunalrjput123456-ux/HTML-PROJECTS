@@ -1,2 +1,2 @@
 # HTML CSS  PROGRAMS
-This repo for learning small project for beginners 
+This repo for learning project for beginners 
