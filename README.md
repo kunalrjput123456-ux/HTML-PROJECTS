@@ -1,3 +1,2 @@
-# HTML CSS JAVASCRIPT PROGRAMS
-
-This is for sample 
+# HTML CSS  PROGRAMS
+This repo for learning small project for beginners 
