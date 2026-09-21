@@ -6,12 +6,11 @@
     <title>Login Page</title>
     
 </head>
-<style> .social { display: flex; justify-content: center; gap: 20px; margin-top: 20px; } .social a { width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 28px; font-weight: bold; } .facebook { background-color: #1877F2; color: white; } .google { background-color: white; color: #4285F4; border: 1px solid #ddd; } </style>
 <body>
     <div class="login-container">
         <h1>Login</h1>
-        >
-            <label for="username">Username:</label>
+        
+            <label for="username"></label>Username:</label>
             <input type="text" placeholder="Enter your username" >
 
             <label for="password">Password:</label>
@@ -25,9 +24,98 @@
     
     <div class="social ">
     <a href="#" class="social-btn Facebook">f</a>
-    <a href="#" class="social-btn Google">G</a>
+   
+    <a href="#" class="Google">
+    <svg width="28" height="28" viewBox="0 0 24 24">
+        <path fill="#4285F4" d="M21.35 12.27c0-.79-.07-1.55-.2-2.27H12v4.3h5.24a4.48 4.48 0 0 1-1.94 2.94v2.45h3.14c1.84-1.7 2.91-4.2 2.91-7.42z"/>
+        <path fill="#34A853" d="M12 21.5c2.63 0 4.84-.87 6.45-2.36l-3.14-2.45c-.87.58-1.98.92-3.31.92-2.54 0-4.69-1.72-5.46-4.03H3.3v2.53A9.74 9.74 0 0 0 12 21.5z"/>
+        <path fill="#FBBC05" d="M6.54 13.58A5.85 5.85 0 0 1 6.24 12c0-.55.1-1.08.3-1.58V7.89H3.3A9.73 9.73 0 0 0 2.27 12c0 1.57.38 3.05 1.03 4.11l3.24-2.53z"/>
+        <path fill="#EA4335" d="M12 6.39c1.43 0 2.71.49 3.72 1.45l2.79-2.79C16.84 3.42 14.63 2.5 12 2.5a9.74 9.74 0 0 0-8.7 5.39l3.24 2.53C7.31 8.11 9.46 6.39 12 6.39z"/>
+    </svg>
+</a>
     </div>
     
+   <style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #01b09c, #9a35d9);
+        color: white;
+    }
+    .login-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(20, 25, 30, 0.65);
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+    h1 {
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        border: none;
+    }
+    button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #01b09c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button[type="submit"]:hover {
+        background-color: #9a35d9;
+    }
+    .social {
+        text-align: center;
+        margin-top: 20px;
+        colour: white;
+    }
+    .Google{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 5px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .social .Google svg {
+        transform: translateY(5px);
+
+    }
+    .social-btn {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 5px;
+        border-radius: 50%;
+        
+        color: #e4dada;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .social-btn.Facebook {
+        background-color: #004ae9;
+    }
+    .social .Google {
+        background-color: #fffefe;
+    }
+   </style>
         
 </body>
 </html>
