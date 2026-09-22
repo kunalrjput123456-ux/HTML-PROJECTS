@@ -6,8 +6,7 @@
     <title>Login Page</title>
     
 </head>
-<<<<<<< HEAD
-=======
+
 <style> .social { 
 display: flex;
  justify-content: center;
@@ -34,7 +33,7 @@ display: flex;
  border: 1px solid #ddd;
  }
  </style>
->>>>>>> fb22aeb5400564516dc206468fb75adf4b5064c9
+
 <body>
     <div class="login-container">
         <h1>Login</h1>
@@ -75,7 +74,7 @@ display: flex;
         max-width: 400px;
         margin: 0 auto;
         padding: 20px;
-        background-color: rgba(20, 25, 30, 0.65);
+        background-color: rgba(171, 189, 207, 0.65);
         border-radius: 20px;
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
         border: 1px solid rgba(255, 255, 255, 0.15);
@@ -91,22 +90,32 @@ display: flex;
     input[type="text"],
     input[type="password"] {
         width: 100%;
-        padding: 10px;
+        padding: 12px;
         margin-bottom: 15px;
-        border-radius: 4px;
-        border: none;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        outline: none;
+        transition: 0.3s;
+        transform: translateX(-3%);
+    }
+    input:focus {
+        border-color: #01b09c;
+        box-shadow: 0 0 10px rgba(1, 179, 158, 0.5);
     }
     button[type="submit"] {
         width: 100%;
-        padding: 10px;
-        background-color: #01b09c;
-        color: white;
+        padding: 12px;
+        background-color: linear-gradient (135deg,#0f3b4a,#2f3115);
+        color: rgb(5, 3, 3);
         border: none;
-        border-radius: 4px;
+        border-radius: 10px;
         cursor: pointer;
+        transition:  0.3s;
     }
     button[type="submit"]:hover {
-        background-color: #9a35d9;
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(56, 92, 128, 0.65);
+    
     }
     .social {
         text-align: center;
@@ -123,7 +132,7 @@ display: flex;
         text-align: center;
     }
     .social .Google svg {
-        transform: translateY(5px);
+        transform: translateY(2px);
 
     }
     .social-btn {
